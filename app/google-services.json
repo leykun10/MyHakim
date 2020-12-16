@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "169196018227",
+    "project_id": "myhakim-37154",
+    "storage_bucket": "myhakim-37154.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169196018227:android:2cd8f38927cc0702c22146",
+        "android_client_info": {
+          "package_name": "com.example.myhakim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169196018227-rav6o5dlv9t92kevudf6jjntpmt3lai1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMoG_TeHUP7AojQYTY3d5rEWBHKcfyZbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169196018227-rav6o5dlv9t92kevudf6jjntpmt3lai1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
