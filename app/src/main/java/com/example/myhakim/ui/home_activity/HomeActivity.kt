@@ -4,13 +4,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.onNavDestinationSelected
 import com.example.myhakim.R
+import kotlinx.android.synthetic.main.fragment_item.*
 import kotlinx.android.synthetic.main.home_activity.*
 
 class HomeActivity : AppCompatActivity() {
     lateinit var toggle:ActionBarDrawerToggle
+    lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,9 +22,7 @@ class HomeActivity : AppCompatActivity() {
         toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close)
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
-
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
 
     }
 
