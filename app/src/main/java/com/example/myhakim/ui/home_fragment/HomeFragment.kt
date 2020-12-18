@@ -6,11 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.lifecycle.Observer
-import androidx.navigation.fragment.findNavController
 import com.example.myhakim.R
-import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.home_fragment.*
 
 class HomeFragment : Fragment() {
@@ -32,8 +28,16 @@ class HomeFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         // TODO: Use the ViewModel
+        hospitalCard.setOnClickListener(){
 
+        }
+        profileCard.setOnClickListener(){
 
+        }
+
+        moreCard.setOnClickListener(){
+
+        }
     }
 
 }
