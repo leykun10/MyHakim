@@ -44,7 +44,7 @@ class LoadingFragment : Fragment() {
                 Log.i("check","came here")
 
 
-                view.findNavController().navigate(R.id.action_loadingFragment_to_homeFragment)
+                view.findNavController().navigate(R.id.action_loadingFragment_to_homeActivity3)
             }
             else{
                 Log.i("check","came here")

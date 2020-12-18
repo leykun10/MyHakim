@@ -1,4 +1,4 @@
-package com.example.myhakim.ui.home_fragment
+package com.example.myhakim.ui.home_activity
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.myhakim.R
 import kotlinx.android.synthetic.main.home_fragment.*
 
@@ -29,12 +30,10 @@ class HomeFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         // TODO: Use the ViewModel
         hospitalCard.setOnClickListener(){
-
+findNavController().navigate(R.id.action_homeFragment2_to_hospitalsFragment)
         }
         profileCard.setOnClickListener(){
-
         }
-
         moreCard.setOnClickListener(){
 
         }
