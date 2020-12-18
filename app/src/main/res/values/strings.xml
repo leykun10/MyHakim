@@ -1,9 +1,16 @@
 <resources>
     <string name="app_name">MyHakim</string>
-    <string name="line_1">Line 1</string>
-    <string name="line_2">Line 2</string>
-    <string name="line_3">Line 3</string>
+    <string name="line_1">Treatment</string>
+    <string name="line_2">Medication</string>
+    <string name="line_3">Hospital</string>
     <string name="todo">TODO</string>
     <string name="insert_item">Insert item</string>
     <string name="remove_item">Remove item</string>
+    <string name="button">Home</string>
+    <string name="insert_card">Insert Card</string>
+    <string name="medical_history">Medical History</string>
+    <string name="remove_card">Remove Card</string>
+    <string name="treatment">Treatment</string>
+    <string name="medication">Medication</string>
+    <string name="hospital">Hospital</string>
 </resources>

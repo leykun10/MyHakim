@@ -2,6 +2,7 @@ package com.example.myhakim
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -9,9 +10,9 @@ import com.example.myhakim.R.id.recycler_view
 import kotlin.random.Random
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(),MedicalHistoryAdapter.OnItemClickListener {
     private val medicalHistoryList = generateDummyList(500)
-    private val adapter = MedicalHistoryAdapter(medicalHistoryList)
+    private val adapter = MedicalHistoryAdapter(medicalHistoryList, this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,8 +29,8 @@ class MainActivity : AppCompatActivity() {
         val index = Random.nextInt(8)
 
         val newItem = MedicalHistory(
-            R.drawable.ic_baseline_calendar, "New item at postition $index",
-            "line 2", "line 3"
+            R.drawable.ic_baseline_calendar, "New Treatment at Position $index",
+            "Medication", "Hospital"
         )
         medicalHistoryList.add(index, newItem)
         adapter.notifyItemInserted(index)
@@ -38,6 +39,13 @@ class MainActivity : AppCompatActivity() {
         val index = Random.nextInt(8)
         medicalHistoryList.removeAt(index)
         adapter.notifyItemRemoved(index)
+    }
+
+    override fun onItemClcick(position: Int) {
+        Toast.makeText(this, "Treatment $position clicked", Toast.LENGTH_SHORT).show()
+        val clickedItem = medicalHistoryList[position]
+        clickedItem.text1 ="clicked"
+        adapter.notifyItemChanged(position)
     }
 
     private fun generateDummyList(size: Int): ArrayList<MedicalHistory> {
@@ -49,7 +57,7 @@ class MainActivity : AppCompatActivity() {
                 else -> R.drawable.ic_baseline_calendar
             }
             val item =
-                MedicalHistory(drawable, "Item $i", "line 2", "line 3")
+                MedicalHistory(drawable, "Treatment $i", "Medication", "Hospital")
             list += item
         }
         return list

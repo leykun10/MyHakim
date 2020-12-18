@@ -1,39 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-   <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/recycler_view"
-       android:padding="4dp"
-       android:clipToPadding="false"
+   <androidx.constraintlayout.widget.ConstraintLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
+       android:background="#E4E4E4">
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="#C5D6E3"
+          android:fontFamily="casual"
+          android:text="@string/medical_history"
+          android:textAlignment="center"
+          android:textColor="#2196F3"
+          android:textSize="36sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.054" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recycler_view"
+       android:layout_width="match_parent"
+       android:layout_height="545dp"
        android:layout_above="@+id/buttons"
+       android:clipToPadding="false"
+       style="?android:attr/buttonBarStyle"
+       android:padding="4dp"
        tools:listitem="@layout/medical_hist" />
    <LinearLayout
        android:id="@+id/buttons"
        android:padding="4dp"
        android:clipToPadding="true"
        android:layout_width="match_parent"
+       style="?android:attr/buttonBarStyle"
        android:layout_height="wrap_content"
        android:layout_alignParentBottom="true">
+
       <Button
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="@string/insert_item"
           android:layout_weight="1"
+          android:background="#A4C9DA"
+          android:fontFamily="casual"
           android:onClick="insertItem"
+          android:text="@string/insert_card"
+          style="?android:attr/borderlessButtonStyle"
+          android:textSize="18sp"
+          app:backgroundTint="#589ACF"
           tools:ignore="ButtonStyle" />
 
       <Button
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="@string/remove_item"
           android:layout_weight="1"
-          android:onClick="removeItem"/>
+          android:background="#C5D0D8"
+          android:fontFamily="casual"
+          android:onClick="removeItem"
+          style="?android:attr/borderlessButtonStyle"
+          android:text="@string/remove_card"
+          android:textColor="#FFFFFF"
+          android:textSize="18sp"
+          app:backgroundTint="#5F97C3" />
 
    </LinearLayout>
 
