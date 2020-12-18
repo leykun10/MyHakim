@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyHakim</string>
+    <string name="app_name">Tena</string>
     <string name="swipe_left_for_register">Swipe Left for Register</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
@@ -11,4 +11,7 @@
     <string name="your_name">Full Name</string>
     <string name="username">username</string>
     <string name="sign_up">sign up</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="tena">Tena</string>
 </resources>

@@ -7,6 +7,16 @@
     android:background="#E8E7E6"
     tools:context=".ui.home_activity.HomeFragment">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="399dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_banner_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <GridLayout
         android:layout_width="363dp"
         android:layout_height="615dp"
@@ -15,10 +25,9 @@
         android:rowCount="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752">
+        app:layout_constraintVertical_bias="0.965">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/profileCard"
