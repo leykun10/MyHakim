@@ -33,10 +33,7 @@ class HomeFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         // TODO: Use the ViewModel
 
-        signOutBtn.setOnClickListener(){
-            FirebaseAuth.getInstance().signOut()
-            findNavController().navigate(R.id.action_homeFragment_to_loadingFragment)
-        }
+
     }
 
 }
