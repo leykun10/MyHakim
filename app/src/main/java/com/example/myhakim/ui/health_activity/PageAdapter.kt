@@ -13,7 +13,6 @@ class PageAdapter(fragmentManager: FragmentManager):FragmentPagerAdapter(fragmen
             0 -> {
                 VitalsFragment()
             }
-
             1 -> {
                 TreatmentHistoryFragment()
             }

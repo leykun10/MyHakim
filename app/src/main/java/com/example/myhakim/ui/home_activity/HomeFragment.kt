@@ -36,7 +36,16 @@ findNavController().navigate(R.id.action_homeFragment2_to_hospitalsFragment)
             findNavController().navigate(R.id.action_homeFragment2_to_profileActivity)
         }
         moreCard.setOnClickListener(){
-
+findNavController().navigate(R.id.action_homeFragment2_to_moreFragment)
+        }
+        calanderCardView.setOnClickListener(){
+            findNavController().navigate(R.id.action_homeFragment2_to_calanderFragment)
+        }
+        supportCardView.setOnClickListener(){
+            findNavController().navigate(R.id.action_homeFragment2_to_supportFragment)
+        }
+        helpCardView.setOnClickListener(){
+            findNavController().navigate(R.id.action_homeFragment2_to_helpFragment)
         }
     }
 

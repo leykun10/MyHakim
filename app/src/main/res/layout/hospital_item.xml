@@ -20,7 +20,7 @@
             android:background="@color/ic_banner_background">
 
             <TextView
-                android:id="@+id/hospitalNameView"
+                android:id="@+id/medicationNameView"
                 android:layout_width="199dp"
                 android:layout_height="51dp"
                 android:layout_marginTop="52dp"
@@ -42,7 +42,7 @@
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView10"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/hospitalNameView"
+                app:layout_constraintTop_toBottomOf="@+id/medicationNameView"
                 app:layout_constraintVertical_bias="0.827" />
 
             <TextView
@@ -56,7 +56,7 @@
                 android:textColor="#272525"
                 android:textSize="24sp"
                 app:layout_constraintStart_toEndOf="@+id/imageView10"
-                app:layout_constraintTop_toBottomOf="@+id/hospitalNameView" />
+                app:layout_constraintTop_toBottomOf="@+id/medicationNameView" />
 
             <ImageView
                 android:id="@+id/imageView10"

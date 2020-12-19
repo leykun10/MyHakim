@@ -15,6 +15,18 @@
         <action
             android:id="@+id/action_homeFragment2_to_profileActivity"
             app:destination="@id/profileActivity" />
+        <action
+            android:id="@+id/action_homeFragment2_to_calanderFragment"
+            app:destination="@id/calanderFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_moreFragment"
+            app:destination="@id/moreFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_supportFragment"
+            app:destination="@id/supportFragment" />
     </fragment>
     <fragment
         android:id="@+id/hospitalsFragment"
@@ -35,4 +47,24 @@
         android:name="com.example.myhakim.ui.hospital_fragment.HospitalFragment"
         android:label="hospital_fragment"
         tools:layout="@layout/hospital_fragment" />
+    <fragment
+        android:id="@+id/calanderFragment"
+        android:name="com.example.myhakim.ui.calander_fragment.CalanderFragment"
+        android:label="calander_fragment"
+        tools:layout="@layout/calander_fragment" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.myhakim.ui.help_fragment.HelpFragment"
+        android:label="help_fragment"
+        tools:layout="@layout/help_fragment" />
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.example.myhakim.ui.more_fragment.MoreFragment"
+        android:label="more_fragment"
+        tools:layout="@layout/more_fragment" />
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="com.example.myhakim.ui.support_fragment.SupportFragment"
+        android:label="support_fragment"
+        tools:layout="@layout/support_fragment" />
 </navigation>

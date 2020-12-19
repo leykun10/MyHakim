@@ -33,7 +33,7 @@ class MyTreatmentHistoryRecyclerViewAdapter(
     override fun getItemCount(): Int = values.size
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val idView: TextView = view.findViewById(R.id.hospitalNameView)
+        val idView: TextView = view.findViewById(R.id.medicationNameView)
 
 
         override fun toString(): String {

@@ -5,11 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import com.example.myhakim.R
 import com.example.myhakim.data.db.entity.Hospital
-import com.example.myhakim.data.dummyData.Dummy
 
 import com.example.myhakim.ui.hospital_fragment.dummy.DummyContent.DummyItem
 
@@ -36,7 +34,7 @@ class MyHospitalsRecyclerViewAdapter(
     override fun getItemCount(): Int = values.size
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val hospitalNameView: TextView = view.findViewById(R.id.hospitalNameView)
+        val hospitalNameView: TextView = view.findViewById(R.id.medicationNameView)
         val detailsButton: Button = view.findViewById(R.id.detailsButton)
 
 

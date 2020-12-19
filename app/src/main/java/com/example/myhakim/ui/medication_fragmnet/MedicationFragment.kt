@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.myhakim.R
+import com.example.myhakim.data.dummyData.Dummy
 import com.example.myhakim.ui.dummy.DummyContent
 
 /**
@@ -39,7 +40,7 @@ class MedicationFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                adapter = MyMedicationRecyclerViewAdapter(DummyContent.ITEMS)
+                adapter = MyMedicationRecyclerViewAdapter(Dummy.treatments[0].prescription)
             }
         }
         return view
