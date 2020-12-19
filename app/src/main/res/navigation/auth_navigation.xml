@@ -22,11 +22,6 @@
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.myhakim.ui.home_activity.HomeFragment"
-        android:label="home_fragment"
-        tools:layout="@layout/home_fragment" />
-    <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.myhakim.ui.auth_fragments.login_fragment.LoginFragment"
         android:label="login_fragment"

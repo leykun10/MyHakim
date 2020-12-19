@@ -14,6 +14,8 @@ class HealthActivity : AppCompatActivity() {
         val tabLayout= findViewById<TabLayout>(R.id.tabLayout)
         viewPager.adapter = PageAdapter(supportFragmentManager)
         tabLayout.setupWithViewPager(viewPager)
+        tabLayout.getTabAt(0)?.setIcon(R.drawable.ic_health_report)
+        tabLayout.getTabAt(1)?.setIcon(R.drawable.ic_medical_history__1_)
 
     }
 }

@@ -4,6 +4,7 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.myhakim.R
@@ -28,15 +29,16 @@ class MyHospitalsRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = values[position]
+       holder.hospitalNameView.text = item.name
 
     }
 
     override fun getItemCount(): Int = values.size
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val hospitalNameView: TextView = view.findViewById(R.id.hospitalName)
-        val hospitalAddressView: TextView = view.findViewById(R.id.hospitalAddress)
-        val hospitalLevelView: TextView = view.findViewById(R.id.hospitalLevel)
+        val hospitalNameView: TextView = view.findViewById(R.id.hospitalNameView)
+        val detailsButton: Button = view.findViewById(R.id.detailsButton)
+
 
         override fun toString(): String {
             return super.toString() + " '" + hospitalNameView.text + "'"

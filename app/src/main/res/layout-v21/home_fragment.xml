@@ -95,7 +95,7 @@
                     android:layout_height="wrap_content"
                     android:text="Hospital"
                     android:textColor="#227E8A"
-                    android:textSize="24sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -133,7 +133,7 @@
                     android:layout_height="wrap_content"
                     android:text="Help"
                     android:textColor="#B3105C"
-                    android:textSize="24sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -171,7 +171,7 @@
                     android:layout_height="wrap_content"
                     android:text="Support"
                     android:textColor="#4CAF50"
-                    android:textSize="24sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -209,7 +209,7 @@
                     android:layout_height="wrap_content"
                     android:text="More"
                     android:textColor="#673AB7"
-                    android:textSize="24sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -247,7 +247,7 @@
                     android:layout_height="wrap_content"
                     android:text="Calender"
                     android:textColor="#57454B"
-                    android:textSize="24sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

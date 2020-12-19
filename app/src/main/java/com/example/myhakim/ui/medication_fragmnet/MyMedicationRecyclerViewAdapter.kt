@@ -1,4 +1,4 @@
-package com.example.myhakim.ui
+package com.example.myhakim.ui.medication_fragmnet
 
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater

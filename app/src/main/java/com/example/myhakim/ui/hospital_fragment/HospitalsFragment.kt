@@ -10,7 +10,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.myhakim.R
 import com.example.myhakim.data.dummyData.Dummy
-import com.example.myhakim.ui.hospital_fragment.dummy.DummyContent
 
 /**
  * A fragment representing a list of Items.
@@ -32,8 +31,6 @@ class HospitalsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_item_list, container, false)
-
-        // Set the adapter
         if (view is RecyclerView) {
             with(view) {
                 layoutManager = when {
@@ -43,9 +40,8 @@ class HospitalsFragment : Fragment() {
                 adapter = MyHospitalsRecyclerViewAdapter(Dummy.hospitals)
             }
         }
-        return view
+return view
     }
-
     companion object {
 
         // TODO: Customize parameter argument names

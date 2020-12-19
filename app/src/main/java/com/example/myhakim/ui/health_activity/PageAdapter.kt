@@ -1,4 +1,5 @@
 package com.example.myhakim.ui.health_activity
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
@@ -20,10 +21,12 @@ class PageAdapter(fragmentManager: FragmentManager):FragmentPagerAdapter(fragmen
 
         }
     }
+
+
     override fun getPageTitle(position: Int): CharSequence? {
         when(position){
             0 -> {return "Vitals"}
-            2 -> {return "History"}
+            1 -> {return "History"}
         }
         return super.getPageTitle(position)
     }

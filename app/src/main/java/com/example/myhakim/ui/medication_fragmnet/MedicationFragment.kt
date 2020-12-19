@@ -1,4 +1,4 @@
-package com.example.myhakim.ui
+package com.example.myhakim.ui.medication_fragmnet
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
