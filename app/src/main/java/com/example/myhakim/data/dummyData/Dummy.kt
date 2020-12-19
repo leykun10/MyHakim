@@ -7,9 +7,8 @@ import com.example.myhakim.data.db.models.Medication
 import java.util.*
 
 object Dummy {
-    /*
+
     var treatments:List<TreatmentHistory> = arrayListOf(TreatmentHistory(1,
-        Date("2020-11-08 T 09 : 45 : 00"),
         Examination(10,
             110,80),
         arrayListOf( "Determined",
@@ -42,7 +41,111 @@ object Dummy {
                 instruction= "Take this medication by mouth as directed by your doctor, usually once daily",
             3),
         ),
-    "tikur andbesa"))*/
+    "tikur andbesa"),
+        TreatmentHistory(1,
+
+            Examination(10,
+                110,80),
+            arrayListOf( "Determined",
+                "Determined",
+                "Determined",
+                "Determined",
+                "Determined"),
+            arrayListOf(
+                Medication("MIGRAINE","200",
+                    2,
+
+                    instruction= "Take two tablets of the medication every eight hours",
+                    2
+                ),
+                Medication(name = "ECONAZOLE", dosage= "10-20 mg", 2,
+                    instruction= "Two times a day",2
+                ),
+                Medication("BUSCOPAN",  "10mg",
+                    2,
+
+                    "Take it when you need to relieve painful abdominal cramps, rather than on a regular basis",
+                    2),
+                Medication(name = "THERAFLU", dosage= "20mg",
+                    2,
+
+                    "Do not take more than 5 doses or 150 mL in 24 hours unless directed by a doctor"
+                    ,2),
+                Medication(name = "LIVER MEX", dosage= "3 mL",
+                    1,
+                    instruction= "Take this medication by mouth as directed by your doctor, usually once daily",
+                    3),
+            ),
+            "tikur andbesa"),
+        TreatmentHistory(1,
+
+            Examination(10,
+                110,80),
+            arrayListOf( "Determined",
+                "Determined",
+                "Determined",
+                "Determined",
+                "Determined"),
+            arrayListOf(
+                Medication("MIGRAINE","200",
+                    2,
+
+                    instruction= "Take two tablets of the medication every eight hours",
+                    2
+                ),
+                Medication(name = "ECONAZOLE", dosage= "10-20 mg", 2,
+                    instruction= "Two times a day",2
+                ),
+                Medication("BUSCOPAN",  "10mg",
+                    2,
+
+                    "Take it when you need to relieve painful abdominal cramps, rather than on a regular basis",
+                    2),
+                Medication(name = "THERAFLU", dosage= "20mg",
+                    2,
+
+                    "Do not take more than 5 doses or 150 mL in 24 hours unless directed by a doctor"
+                    ,2),
+                Medication(name = "LIVER MEX", dosage= "3 mL",
+                    1,
+                    instruction= "Take this medication by mouth as directed by your doctor, usually once daily",
+                    3),
+            ),
+            "tikur andbesa"),
+        TreatmentHistory(1,
+            Examination(10,
+                110,80),
+            arrayListOf( "Determined",
+                "Determined",
+                "Determined",
+                "Determined",
+                "Determined"),
+            arrayListOf(
+                Medication("MIGRAINE","200",
+                    2,
+
+                    instruction= "Take two tablets of the medication every eight hours",
+                    2
+                ),
+                Medication(name = "ECONAZOLE", dosage= "10-20 mg", 2,
+                    instruction= "Two times a day",2
+                ),
+                Medication("BUSCOPAN",  "10mg",
+                    2,
+
+                    "Take it when you need to relieve painful abdominal cramps, rather than on a regular basis",
+                    2),
+                Medication(name = "THERAFLU", dosage= "20mg",
+                    2,
+
+                    "Do not take more than 5 doses or 150 mL in 24 hours unless directed by a doctor"
+                    ,2),
+                Medication(name = "LIVER MEX", dosage= "3 mL",
+                    1,
+                    instruction= "Take this medication by mouth as directed by your doctor, usually once daily",
+                    3),
+            ),
+            "tikur andbesa"))
 
 
 

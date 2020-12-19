@@ -3,6 +3,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.example.myhakim.ui.treatmentHistory.TreatmentHistoryFragment
+
 class PageAdapter(fragmentManager: FragmentManager):FragmentPagerAdapter(fragmentManager) {
     override fun getCount(): Int = 2
 
@@ -13,7 +15,7 @@ class PageAdapter(fragmentManager: FragmentManager):FragmentPagerAdapter(fragmen
             }
 
             1 -> {
-                TreatmentsFragment()
+                TreatmentHistoryFragment()
             }
             else -> {
                 VitalsFragment()
