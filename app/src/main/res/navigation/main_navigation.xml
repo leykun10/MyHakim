@@ -12,10 +12,27 @@
         <action
             android:id="@+id/action_homeFragment2_to_hospitalsFragment"
             app:destination="@id/hospitalsFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_profileActivity"
+            app:destination="@id/profileActivity" />
     </fragment>
     <fragment
         android:id="@+id/hospitalsFragment"
         android:name="com.example.myhakim.ui.hospital_fragment.HospitalsFragment"
         android:label="fragment_item_list"
-        tools:layout="@layout/fragment_item_list" />
+        tools:layout="@layout/fragment_item_list" >
+        <action
+            android:id="@+id/action_hospitalsFragment_to_hospitalFragment"
+            app:destination="@id/hospitalFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/profileActivity"
+        android:name="com.example.myhakim.ui.health_activity.HealthActivity"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_health" />
+    <fragment
+        android:id="@+id/hospitalFragment"
+        android:name="com.example.myhakim.ui.hospital_fragment.HospitalFragment"
+        android:label="hospital_fragment"
+        tools:layout="@layout/hospital_fragment" />
 </navigation>

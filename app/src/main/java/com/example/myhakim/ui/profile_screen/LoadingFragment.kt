@@ -1,4 +1,4 @@
-package com.example.myhakim.ui.loadingscreen_fragment
+package com.example.myhakim.ui.profile_screen
 
 import android.os.Bundle
 import android.os.Handler
@@ -9,8 +9,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.example.myhakim.R
+import com.example.myhakim.ui.loadingscreen_fragment.LoadingViewModel
 import com.google.firebase.auth.FirebaseAuth
 
 

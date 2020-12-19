@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/list"
-    android:name="com.example.myhakim.ui.hospital_fragment.HospitalsFragment"
+    android:name="com.example.myhakim.ui.MedicationFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     app:layoutManager="LinearLayoutManager"
-    tools:context=".ui.hospital_fragment.HospitalsFragment"
-    tools:listitem="@layout/hospital_item" />
+    tools:context=".ui.MedicationFragment"
+    tools:listitem="@layout/fragment_medication" />

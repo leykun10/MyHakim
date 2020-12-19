@@ -8,8 +8,8 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.onNavDestinationSelected
 import com.example.myhakim.R
-import kotlinx.android.synthetic.main.fragment_item.*
 import kotlinx.android.synthetic.main.home_activity.*
+import kotlinx.android.synthetic.main.nav_header.*
 
 class HomeActivity : AppCompatActivity() {
     lateinit var toggle:ActionBarDrawerToggle
@@ -23,6 +23,9 @@ class HomeActivity : AppCompatActivity() {
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
+
 
     }
 

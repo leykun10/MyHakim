@@ -7,11 +7,11 @@
     android:background="@color/ic_banner_background">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/profilePictureView"
         android:layout_width="67dp"
         android:layout_height="54dp"
         android:layout_marginTop="156dp"
-        android:src="@drawable/ic_baseline_person_24"
+        android:src="@drawable/ic_baseline_account_circle_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"

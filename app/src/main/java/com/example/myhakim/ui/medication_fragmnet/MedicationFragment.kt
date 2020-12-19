@@ -1,4 +1,4 @@
-package com.example.myhakim.ui.hospital_fragment
+package com.example.myhakim.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,13 +9,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.myhakim.R
-import com.example.myhakim.data.dummyData.Dummy
-import com.example.myhakim.ui.hospital_fragment.dummy.DummyContent
+import com.example.myhakim.ui.dummy.DummyContent
 
 /**
  * A fragment representing a list of Items.
  */
-class HospitalsFragment : Fragment() {
+class MedicationFragment : Fragment() {
 
     private var columnCount = 1
 
@@ -31,7 +30,7 @@ class HospitalsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_item_list, container, false)
+        val view = inflater.inflate(R.layout.fragment_medicaiton_list, container, false)
 
         // Set the adapter
         if (view is RecyclerView) {
@@ -40,7 +39,7 @@ class HospitalsFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                adapter = MyHospitalsRecyclerViewAdapter(Dummy.hospitals)
+                adapter = MyMedicationRecyclerViewAdapter(DummyContent.ITEMS)
             }
         }
         return view
@@ -54,7 +53,7 @@ class HospitalsFragment : Fragment() {
         // TODO: Customize parameter initialization
         @JvmStatic
         fun newInstance(columnCount: Int) =
-            HospitalsFragment().apply {
+            MedicationFragment().apply {
                 arguments = Bundle().apply {
                     putInt(ARG_COLUMN_COUNT, columnCount)
                 }

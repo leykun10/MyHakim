@@ -1,4 +1,4 @@
-package com.example.myhakim.ui.profile_activity
+package com.example.myhakim.ui.profile_screen
 
 import androidx.lifecycle.ViewModel
 

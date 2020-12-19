@@ -33,6 +33,7 @@ class HomeFragment : Fragment() {
 findNavController().navigate(R.id.action_homeFragment2_to_hospitalsFragment)
         }
         profileCard.setOnClickListener(){
+            findNavController().navigate(R.id.action_homeFragment2_to_profileActivity)
         }
         moreCard.setOnClickListener(){
 

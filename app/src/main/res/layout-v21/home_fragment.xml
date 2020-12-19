@@ -55,16 +55,9 @@
                 <ImageView
                     android:id="@+id/imageView5"
                     android:layout_width="113dp"
-                    android:layout_height="104dp"
-                    android:src="@drawable/ic_baseline_person_24" />
+                    android:layout_height="149dp"
+                    android:src="@drawable/ic_healthicon" />
 
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Profile"
-                    android:textColor="#3A3737"
-                    android:textSize="24sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -92,16 +85,16 @@
 
                 <ImageView
                     android:id="@+id/imageView6"
-                    android:layout_width="113dp"
-                    android:layout_height="104dp"
-                    android:src="@drawable/ic_baseline_local_hospital_24" />
+                    android:layout_width="103dp"
+                    android:layout_height="91dp"
+                    android:src="@drawable/ic_hospital" />
 
                 <TextView
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Hospital"
-                    android:textColor="#3A3737"
+                    android:textColor="#227E8A"
                     android:textSize="24sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -132,14 +125,14 @@
                     android:id="@+id/imageView9"
                     android:layout_width="113dp"
                     android:layout_height="104dp"
-                    android:src="@drawable/ic_baseline_help_24" />
+                    android:src="@drawable/ic_help" />
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Help"
-                    android:textColor="#3A3737"
+                    android:textColor="#B3105C"
                     android:textSize="24sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -170,14 +163,14 @@
                     android:id="@+id/imageView8"
                     android:layout_width="113dp"
                     android:layout_height="104dp"
-                    android:src="@drawable/ic_baseline_support_agent_24" />
+                    android:src="@drawable/ic_customer_service" />
 
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Support"
-                    android:textColor="#3A3737"
+                    android:textColor="#4CAF50"
                     android:textSize="24sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -208,14 +201,14 @@
                     android:id="@+id/imageView12"
                     android:layout_width="113dp"
                     android:layout_height="104dp"
-                    android:src="@drawable/ic_baseline_more_horiz_24" />
+                    android:src="@drawable/ic_more" />
 
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="More"
-                    android:textColor="#3A3737"
+                    android:textColor="#673AB7"
                     android:textSize="24sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -246,14 +239,14 @@
                     android:id="@+id/imageView13"
                     android:layout_width="113dp"
                     android:layout_height="104dp"
-                    android:src="@drawable/ic_baseline_calendar_today_24" />
+                    android:src="@drawable/ic_schedule" />
 
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Calender"
-                    android:textColor="#3A3737"
+                    android:textColor="#57454B"
                     android:textSize="24sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
