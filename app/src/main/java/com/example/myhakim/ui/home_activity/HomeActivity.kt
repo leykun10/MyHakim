@@ -13,6 +13,7 @@ import com.example.myhakim.MainActivity
 import com.example.myhakim.R
 import com.example.myhakim.ui.ContactActivity
 import com.example.myhakim.ui.NotificationActivity
+import com.example.myhakim.ui.SettingsActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.home_activity.*
 import kotlinx.android.synthetic.main.nav_header.*
@@ -34,6 +35,10 @@ class HomeActivity : AppCompatActivity() {
 nav_view.setNavigationItemSelectedListener {
 
     when(it.itemId){
+        R.id.setting_item-> {
+            var intent = Intent(this,SettingsActivity::class.java)
+            startActivity(intent)
+        }
         R.id.home_item-> {
             var intent = Intent(this,HomeActivity::class.java)
             startActivity(intent)

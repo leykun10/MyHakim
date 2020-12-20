@@ -7,6 +7,16 @@
     android:background="@color/ic_banner_background"
     tools:context=".ui.treatmentHistory.TreatmentActivity">
 
+  <ImageView
+      android:id="@+id/imageView3"
+      android:layout_width="382dp"
+      android:layout_height="178dp"
+      app:layout_constraintBottom_toTopOf="@+id/treatmentView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/scrollView2"
+      android:src="@drawable/ic_baseline_healing_24" />
+
   <ScrollView
       android:id="@+id/scrollView2"
       android:layout_width="match_parent"
@@ -26,8 +36,8 @@
 
   <TextView
       android:id="@+id/treatmentView"
-      android:layout_width="364dp"
-      android:layout_height="709dp"
+      android:layout_width="369dp"
+      android:layout_height="260dp"
       android:text="TextView"
       android:textColor="#353131"
       android:textSize="18sp"
