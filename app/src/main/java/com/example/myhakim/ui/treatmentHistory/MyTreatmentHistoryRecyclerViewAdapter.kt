@@ -1,10 +1,16 @@
 package com.example.myhakim.ui.treatmentHistory
 
+import android.app.Application
+import android.content.Intent
+import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
+import androidx.navigation.findNavController
 import com.example.myhakim.R
 import com.example.myhakim.data.db.entity.TreatmentHistory
 
@@ -35,7 +41,15 @@ class MyTreatmentHistoryRecyclerViewAdapter(
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val idView: TextView = view.findViewById(R.id.medicationNameView)
 
+init {
+    val detailsButton: Button = view.findViewById(R.id.detailsButton)
+    detailsButton.setOnClickListener(){
+        var intent:Intent = Intent(view.context,TreatmentActivity::class.java)
+        intent.putExtra("name","${idView.text}")
+        startActivity(view.context,intent, Bundle())
 
+    }
+}
         override fun toString(): String {
             return super.toString() + " '" + idView.text + "'"
         }

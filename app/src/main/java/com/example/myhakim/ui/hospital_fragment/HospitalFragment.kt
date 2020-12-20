@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 import com.example.myhakim.R
+import kotlinx.android.synthetic.main.hospital_fragment.*
 
 class HospitalFragment : Fragment() {
 
@@ -20,13 +22,16 @@ class HospitalFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         return inflater.inflate(R.layout.hospital_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
+        val args: HospitalFragmentArgs by navArgs()
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(HospitalViewModel::class.java)
-        // TODO: Use the ViewModel
+        detailHospitalFr.text= "${args.hospital}"
+
     }
 
 }

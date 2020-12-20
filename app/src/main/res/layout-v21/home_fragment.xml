@@ -9,11 +9,17 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="399dp"
-        android:layout_height="104dp"
+        android:layout_width="281dp"
+        android:layout_height="98dp"
         android:layout_marginStart="16dp"
-        android:src="@drawable/ic_banner_foreground"
+        android:layout_marginTop="16dp"
+        android:background="#E8E7E6"
+        android:padding="15dp"
+        android:paddingTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_photo_2020_12_20_00_48_41"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,9 +31,10 @@
         android:rowCount="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.965">
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/profileCard"
@@ -170,7 +177,7 @@
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Support"
+                    android:text="Contacts"
                     android:textColor="#4CAF50"
                     android:textSize="18sp" />
             </LinearLayout>

@@ -1,13 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/textView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.more_fragment.MoreFragment">
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:textSize="36sp"
+    android:textStyle="bold"
+    tools:text="Useful Tips" />
+
+<ScrollView
+    android:id="@+id/bio_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/bio_text"
+        style=""
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="________3 Healthy_______ Lifestyle Tips for Adults
 
-</FrameLayout>
+1. Eat a variety of foods
+For good health, we need more than 40 different nutrients, and no single food can supply them all.
+2. Base your diet on plenty of foods rich in carbohydrates
+About half the calories in our diet should come from foods rich in carbohydrates, such as cereals, rice, pasta, potatoes, and bread. It is a good idea to include at least one of these at every meal.
+3. Replace saturated with unsaturated fat
+Fats are important for good health and proper functioning of the body.
+We should limit the consumption of total and saturated fats (often coming from foods of animal origin), and completely avoid trans fats; reading the labels helps to identify the sources."
+        android:textSize="30sp" />
+</ScrollView>
+</LinearLayout>

@@ -8,12 +8,14 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.onNavDestinationSelected
 import com.example.myhakim.R
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.home_activity.*
 import kotlinx.android.synthetic.main.nav_header.*
 
 class HomeActivity : AppCompatActivity() {
     lateinit var toggle:ActionBarDrawerToggle
     lateinit var navController: NavController
+    val auth= FirebaseAuth.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +30,7 @@ class HomeActivity : AppCompatActivity() {
 
 
     }
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(toggle.onOptionsItemSelected(item)){

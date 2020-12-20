@@ -76,8 +76,8 @@ object Dummy {
                     instruction= "Take this medication by mouth as directed by your doctor, usually once daily",
                     3),
             ),
-            "tikur andbesa"),
-        TreatmentHistory(1,
+            "Landmark"),
+        TreatmentHistory(2,
 
             Examination(10,
                 110,80),
@@ -111,7 +111,7 @@ object Dummy {
                     instruction= "Take this medication by mouth as directed by your doctor, usually once daily",
                     3),
             ),
-            "tikur andbesa"),
+            "Kidus Yared"),
         TreatmentHistory(1,
             Examination(10,
                 110,80),
@@ -145,7 +145,7 @@ object Dummy {
                     instruction= "Take this medication by mouth as directed by your doctor, usually once daily",
                     3),
             ),
-            "tikur andbesa"))
+            "Sam Vision"))
 
 
 

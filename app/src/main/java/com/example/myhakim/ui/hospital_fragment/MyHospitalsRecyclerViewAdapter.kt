@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.navigation.NavDirections
+import androidx.navigation.findNavController
 import com.example.myhakim.R
 import com.example.myhakim.data.db.entity.Hospital
 
@@ -35,7 +37,16 @@ class MyHospitalsRecyclerViewAdapter(
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val hospitalNameView: TextView = view.findViewById(R.id.medicationNameView)
-        val detailsButton: Button = view.findViewById(R.id.detailsButton)
+
+        init {
+            val detailsButton: Button = view.findViewById(R.id.detailsButton)
+       detailsButton.setOnClickListener(){
+           val action = HospitalsFragmentDirections.actionHospitalsFragmentToHospitalFragment(hospitalNameView.text.toString()
+           )
+           view.findNavController().navigate(action)
+       }
+        }
+
 
 
         override fun toString(): String {

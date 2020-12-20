@@ -46,7 +46,11 @@
         android:id="@+id/hospitalFragment"
         android:name="com.example.myhakim.ui.hospital_fragment.HospitalFragment"
         android:label="hospital_fragment"
-        tools:layout="@layout/hospital_fragment" />
+        tools:layout="@layout/hospital_fragment" >
+        <argument
+            android:name="hospital"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/calanderFragment"
         android:name="com.example.myhakim.ui.calander_fragment.CalanderFragment"

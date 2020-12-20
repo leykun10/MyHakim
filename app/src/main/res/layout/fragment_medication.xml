@@ -20,8 +20,8 @@
 
             <TextView
                 android:id="@+id/medicationNameView"
-                android:layout_width="196dp"
-                android:layout_height="72dp"
+                android:layout_width="191dp"
+                android:layout_height="89dp"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
                 android:text="TextView"
@@ -34,10 +34,11 @@
 
             <ImageView
                 android:id="@+id/imageView10"
-                android:layout_width="145dp"
-                android:layout_height="156dp"
+                android:layout_width="137dp"
+                android:layout_height="167dp"
                 android:layout_marginStart="4dp"
-                android:src="@drawable/ic_baseline_healing_24"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_econazole"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -47,13 +48,13 @@
                 android:id="@+id/detailsButton"
                 android:layout_width="141dp"
                 android:layout_height="42dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="12dp"
                 android:background="@drawable/auth_custom_btn"
                 android:text="detail"
                 android:textColor="#FFFFFF"
                 app:backgroundTint="#970637"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.456"
+                app:layout_constraintHorizontal_bias="0.506"
                 app:layout_constraintStart_toEndOf="@+id/imageView10"
                 app:layout_constraintTop_toBottomOf="@+id/medicationNameView" />
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,10 +35,10 @@
 
             <ImageView
                 android:id="@+id/imageView10"
-                android:layout_width="145dp"
-                android:layout_height="156dp"
-                android:layout_marginStart="4dp"
-                android:src="@drawable/ic_baseline_healing_24"
+                android:layout_width="152dp"
+                android:layout_height="171dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_pngtree_vector_hospital_icon_png_image_319658"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"

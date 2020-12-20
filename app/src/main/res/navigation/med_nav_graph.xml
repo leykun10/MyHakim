@@ -18,5 +18,9 @@
         android:id="@+id/medicalFragment"
         android:name="com.example.myhakim.ui.medication_fragmnet.MedicalFragment"
         android:label="medical_fragment"
-        tools:layout="@layout/medical_fragment" />
+        tools:layout="@layout/medical_fragment" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
 </navigation>
