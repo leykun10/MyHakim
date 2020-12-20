@@ -5,6 +5,7 @@
     android:id="@+id/emergency_View"
     android:layout_width="match_parent"
     android:layout_height="150dp"
+    android:background="#EEEFF1"
     android:orientation="horizontal">
 
     <androidx.cardview.widget.CardView
@@ -22,8 +23,8 @@
 
             <ImageView
                 android:id="@+id/imageView10"
-                android:layout_width="137dp"
-                android:layout_height="109dp"
+                android:layout_width="112dp"
+                android:layout_height="99dp"
                 android:layout_marginStart="4dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_ambulance"
@@ -38,7 +39,7 @@
                 android:layout_height="43dp"
                 android:layout_marginBottom="16dp"
                 android:gravity="center"
-                android:text="09004542512"
+                android:text="090045425"
                 android:textColor="#201D1D"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -53,7 +54,7 @@
                 android:layout_marginStart="220dp"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:text="Area Piasa"
+                android:text="Area: Piasa"
                 android:textColor="#201D1D"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
