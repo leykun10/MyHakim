@@ -1,5 +1,6 @@
 package com.example.myhakim.ui.home_activity
 
+import android.app.Notification
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.onNavDestinationSelected
 import com.example.myhakim.MainActivity
 import com.example.myhakim.R
+import com.example.myhakim.ui.ContactActivity
+import com.example.myhakim.ui.NotificationActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.home_activity.*
 import kotlinx.android.synthetic.main.nav_header.*
@@ -36,7 +39,7 @@ nav_view.setNavigationItemSelectedListener {
             startActivity(intent)
         }
         R.id.notification->{
-            var intent = Intent(this,MainActivity::class.java)
+            var intent = Intent(this,NotificationActivity::class.java)
             startActivity(intent)
         }
 
@@ -45,7 +48,12 @@ nav_view.setNavigationItemSelectedListener {
             auth.signOut()
             var intent = Intent(this,MainActivity::class.java)
             startActivity(intent)}
-    }
+
+    R.id.contact->
+    {
+        var intent = Intent(this, ContactActivity::class.java)
+        startActivity(intent)}
+}
     true
 }
 

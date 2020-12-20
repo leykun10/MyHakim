@@ -15,6 +15,7 @@
         android:icon="@drawable/ic_baseline_settings_24"
         android:title="Setting" />
     <item android:title="Contact"
+        android:id="@+id/contact"
         android:icon="@drawable/ic_baseline_contact_mail_24"/>
     <item android:title="Sign out"
         android:id="@+id/sign_out_item"
