@@ -36,13 +36,13 @@ findNavController().navigate(R.id.action_homeFragment2_to_hospitalsFragment)
             findNavController().navigate(R.id.action_homeFragment2_to_profileActivity)
         }
         moreCard.setOnClickListener(){
-findNavController().navigate(R.id.action_homeFragment2_to_moreFragment)
+findNavController().navigate(R.id.action_homeFragment2_to_newDailyTIpsFragment)
         }
         calanderCardView.setOnClickListener(){
             findNavController().navigate(R.id.action_homeFragment2_to_calanderFragment)
         }
         supportCardView.setOnClickListener(){
-            findNavController().navigate(R.id.action_homeFragment2_to_supportFragment)
+            findNavController().navigate(R.id.action_homeFragment2_to_emergencyContactFragment)
         }
         helpCardView.setOnClickListener(){
             findNavController().navigate(R.id.action_homeFragment2_to_helpFragment)

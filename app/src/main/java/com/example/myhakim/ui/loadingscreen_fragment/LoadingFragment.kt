@@ -1,4 +1,4 @@
-package com.example.myhakim.ui.profile_screen
+package com.example.myhakim.ui.loadingscreen_fragment
 
 import android.os.Bundle
 import android.os.Handler
@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.example.myhakim.R
-import com.example.myhakim.ui.loadingscreen_fragment.LoadingViewModel
 import com.google.firebase.auth.FirebaseAuth
 
 
@@ -42,15 +41,13 @@ class LoadingFragment : Fragment() {
         Handler().postDelayed({
             if (currentUser != null) {
                 Log.i("check","came here")
-
-
                 view.findNavController().navigate(R.id.action_loadingFragment_to_homeActivity3)
             }
             else{
                 Log.i("check","came here")
                 view.findNavController().navigate(R.id.action_loadingFragment_to_loginFragment)
             }
-        },200)
+        },300)
 
 
 

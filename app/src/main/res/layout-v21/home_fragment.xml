@@ -171,13 +171,13 @@
                     android:id="@+id/imageView8"
                     android:layout_width="113dp"
                     android:layout_height="104dp"
-                    android:src="@drawable/ic_customer_service" />
+                    android:src="@drawable/ic_ambulance" />
 
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contacts"
+                    android:text="Emergency"
                     android:textColor="#4CAF50"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -253,7 +253,7 @@
                     android:id="@+id/textView13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Calender"
+                    android:text="Appointment"
                     android:textColor="#57454B"
                     android:textSize="18sp" />
             </LinearLayout>

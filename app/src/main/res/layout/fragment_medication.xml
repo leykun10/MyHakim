@@ -34,11 +34,11 @@
 
             <ImageView
                 android:id="@+id/imageView10"
-                android:layout_width="137dp"
-                android:layout_height="167dp"
+                android:layout_width="126dp"
+                android:layout_height="137dp"
                 android:layout_marginStart="4dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_econazole"
+                android:src="@drawable/ic_creative_tail_medicinesvg"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"

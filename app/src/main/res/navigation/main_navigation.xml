@@ -22,11 +22,14 @@
             android:id="@+id/action_homeFragment2_to_helpFragment"
             app:destination="@id/helpFragment" />
         <action
-            android:id="@+id/action_homeFragment2_to_moreFragment"
-            app:destination="@id/moreFragment" />
-        <action
             android:id="@+id/action_homeFragment2_to_supportFragment"
             app:destination="@id/supportFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_newDailyTIpsFragment"
+            app:destination="@id/newDailyTIpsFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_emergencyContactFragment"
+            app:destination="@id/emergencyContactFragment" />
     </fragment>
     <fragment
         android:id="@+id/hospitalsFragment"
@@ -62,13 +65,18 @@
         android:label="help_fragment"
         tools:layout="@layout/help_fragment" />
     <fragment
-        android:id="@+id/moreFragment"
-        android:name="com.example.myhakim.ui.more_fragment.MoreFragment"
-        android:label="more_fragment"
-        tools:layout="@layout/more_fragment" />
-    <fragment
         android:id="@+id/supportFragment"
         android:name="com.example.myhakim.ui.support_fragment.SupportFragment"
         android:label="support_fragment"
         tools:layout="@layout/support_fragment" />
+    <fragment
+        android:id="@+id/newDailyTIpsFragment"
+        android:name="com.example.myhakim.ui.NewDailyTIpsFragment"
+        android:label="new_daily_tips_fragment"
+        tools:layout="@layout/new_daily_tips_fragment" />
+    <fragment
+        android:id="@+id/emergencyContactFragment"
+        android:name="com.example.myhakim.ui.EmergencyContactFragment"
+        android:label="fragment_item_emergency_ilist"
+        tools:layout="@layout/fragment_item_emergency_ilist" />
 </navigation>

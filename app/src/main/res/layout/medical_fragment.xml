@@ -44,11 +44,11 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="385dp"
-        android:layout_height="175dp"
+        android:layout_width="387dp"
+        android:layout_height="200dp"
         android:layout_marginBottom="40dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_health"
+        android:src="@drawable/ic_econazole"
         app:layout_constraintBottom_toTopOf="@+id/medInfo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
