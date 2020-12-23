@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyHakim</string>
+    <string name="app_name">Tena</string>
     <string name="swipe_left_for_register">Swipe Left for Register</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
@@ -11,4 +11,28 @@
     <string name="your_name">Full Name</string>
     <string name="username">username</string>
     <string name="sign_up">sign up</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="tena">Tena</string>
+    <string name="medication">medication</string>
+    <string name="sugar_level">sugar level</string>
+    <string name="glucose">glucose level</string>
+    <string name="heart_rate">heart_rate</string>
+    <string name="blood_pressure">blood_pressure</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>

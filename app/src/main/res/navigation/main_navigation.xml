@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment2">
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.myhakim.ui.home_activity.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment2_to_hospitalsFragment"
+            app:destination="@id/hospitalsFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_profileActivity"
+            app:destination="@id/profileActivity" />
+        <action
+            android:id="@+id/action_homeFragment2_to_calanderFragment"
+            app:destination="@id/calanderFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_supportFragment"
+            app:destination="@id/supportFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_newDailyTIpsFragment"
+            app:destination="@id/newDailyTIpsFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_emergencyContactFragment"
+            app:destination="@id/emergencyContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hospitalsFragment"
+        android:name="com.example.myhakim.ui.hospital_fragment.HospitalsFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" >
+        <action
+            android:id="@+id/action_hospitalsFragment_to_hospitalFragment"
+            app:destination="@id/hospitalFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/profileActivity"
+        android:name="com.example.myhakim.ui.health_activity.HealthActivity"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_health" />
+    <fragment
+        android:id="@+id/hospitalFragment"
+        android:name="com.example.myhakim.ui.hospital_fragment.HospitalFragment"
+        android:label="hospital_fragment"
+        tools:layout="@layout/hospital_fragment" >
+        <argument
+            android:name="hospital"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/calanderFragment"
+        android:name="com.example.myhakim.ui.calander_fragment.CalanderFragment"
+        android:label="calander_fragment"
+        tools:layout="@layout/calander_fragment" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.myhakim.ui.help_fragment.HelpFragment"
+        android:label="help_fragment"
+        tools:layout="@layout/help_fragment" />
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="com.example.myhakim.ui.support_fragment.SupportFragment"
+        android:label="support_fragment"
+        tools:layout="@layout/support_fragment" />
+    <fragment
+        android:id="@+id/newDailyTIpsFragment"
+        android:name="com.example.myhakim.ui.NewDailyTIpsFragment"
+        android:label="new_daily_tips_fragment"
+        tools:layout="@layout/new_daily_tips_fragment" />
+    <fragment
+        android:id="@+id/emergencyContactFragment"
+        android:name="com.example.myhakim.ui.EmergencyContactFragment"
+        android:label="fragment_item_emergency_ilist"
+        tools:layout="@layout/fragment_item_emergency_ilist" />
+</navigation>

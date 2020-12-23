@@ -10,7 +10,6 @@ import java.util.*
 @Entity(tableName = "medical_history")
 data class TreatmentHistory(@PrimaryKey(autoGenerate = true)
                              var treatmentId:Int,
-                             var dataTime:Date,
                              @Embedded
                              var examination: Examination,
                              var diagnosis:List<String>,

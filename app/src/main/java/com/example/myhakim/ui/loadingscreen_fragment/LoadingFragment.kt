@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.example.myhakim.R
 import com.google.firebase.auth.FirebaseAuth
 
@@ -42,15 +41,13 @@ class LoadingFragment : Fragment() {
         Handler().postDelayed({
             if (currentUser != null) {
                 Log.i("check","came here")
-
-
-                view.findNavController().navigate(R.id.action_loadingFragment_to_homeFragment)
+                view.findNavController().navigate(R.id.action_loadingFragment_to_homeActivity3)
             }
             else{
                 Log.i("check","came here")
                 view.findNavController().navigate(R.id.action_loadingFragment_to_loginFragment)
             }
-        },200)
+        },300)
 
 
 

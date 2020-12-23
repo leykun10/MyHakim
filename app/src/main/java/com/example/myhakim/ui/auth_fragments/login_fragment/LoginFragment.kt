@@ -74,18 +74,15 @@ class LoginFragment : Fragment() {
                      customDialog.startDialogAnimation()
                      auth.signInWithEmailAndPassword(it1, it2)
                              .addOnCompleteListener() { task ->
+                                 customDialog.dismissDialog()
                                  if (task.isSuccessful) {
                                      // Sign in success, update UI with the signed-in user's information
                                      Log.d("TAG", "createUserWithEmail:success")
                                      val user = auth.currentUser
-                                     customDialog.dismissDialog()
                                      findNavController().navigate(R.id.action_loginFragment_to_loadingFragment)
                                  } else {
                                      // If sign in fails, display a message to the user.
-                                     Toast.makeText(context, task.exception.toString() ,Toast.LENGTH_SHORT).show()
-                                     customDialog.dismissDialog()
-                                     Log.w("TAG", "createUserWithEmail:failure", task.exception)
-
+                                     Toast.makeText(context, "server error" ,Toast.LENGTH_SHORT).show()
 
                                  }
 
