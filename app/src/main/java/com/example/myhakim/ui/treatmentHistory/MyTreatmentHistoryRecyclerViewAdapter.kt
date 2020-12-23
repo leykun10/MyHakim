@@ -1,6 +1,5 @@
 package com.example.myhakim.ui.treatmentHistory
 
-import android.app.Application
 import android.content.Intent
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
@@ -10,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
-import androidx.navigation.findNavController
 import com.example.myhakim.R
 import com.example.myhakim.data.db.entity.TreatmentHistory
 
@@ -26,7 +24,7 @@ class MyTreatmentHistoryRecyclerViewAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-                .inflate(R.layout.fragment_treatment_history, parent, false)
+                .inflate(R.layout.fragment_treatment_history_item, parent, false)
         return ViewHolder(view)
     }
 

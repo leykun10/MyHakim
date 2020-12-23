@@ -9,7 +9,7 @@
         android:id="@+id/loadingFragment"
         android:name="com.example.myhakim.ui.loadingscreen_fragment.LoadingFragment"
         android:label="loading_fragment"
-        tools:layout="@layout/loading_fragment" >
+        tools:layout="@layout/fragment_loading" >
         <action
             android:id="@+id/action_loadingFragment_to_loginFragment"
             app:destination="@id/loginFragment"
@@ -25,7 +25,7 @@
         android:id="@+id/loginFragment"
         android:name="com.example.myhakim.ui.auth_fragments.login_fragment.LoginFragment"
         android:label="login_fragment"
-        tools:layout="@layout/login_fragment" >
+        tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
@@ -37,7 +37,7 @@
         android:id="@+id/signUpFragment"
         android:name="com.example.myhakim.ui.auth_fragments.signUp_fragment.signUpFragment"
         android:label="sign_up_fragment"
-        tools:layout="@layout/sign_up_fragment" >
+        tools:layout="@layout/fragment_sign_up" >
         <action
             android:id="@+id/action_signUpFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
@@ -49,5 +49,5 @@
         android:id="@+id/homeActivity3"
         android:name="com.example.myhakim.ui.home_activity.HomeActivity"
         android:label="home_activity"
-        tools:layout="@layout/home_activity" />
+        tools:layout="@layout/activity_home" />
 </navigation>

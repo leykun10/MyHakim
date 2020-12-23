@@ -11,14 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyHakim">
-        <activity android:name=".ui.ContactActivity"></activity>
-        <activity android:name=".ui.NotificationActivity" />
+        <activity android:name=".ui.contact_us_activity.ContactUsActivity"></activity>
+        <activity android:name=".ui.notification_activity.NotificationActivity" />
         <activity
-            android:name=".ui.SettingsActivity"
+            android:name=".ui.setting_activity.SettingsActivity"
             android:label="@string/title_activity_settings" />
         <activity android:name=".ui.treatmentHistory.TreatmentActivity" />
-        <activity android:name=".ui.medication_fragmnet.MedicalActivity" />
-        <activity android:name=".ui.health_activity.HealthActivity" />
+        <activity android:name=".ui.medication_activity.MedicalActivity" />
+        <activity android:name=".ui.personal_health_activity.PersonalHealthActivity" />
         <activity android:name=".ui.home_activity.HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

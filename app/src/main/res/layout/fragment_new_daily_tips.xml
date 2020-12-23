@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.daily_tips_fragment.NewDailyTIpsFragment" >
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="372dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/amarante"
+        android:gravity="center"
+        android:text="Todays Tips"
+        android:textColor="#302C2C"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="372dp"
+        android:layout_height="594dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.112">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="384dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/amarante"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:text="3 Healthy Lifestyle Tips for Adults"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="507dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text=' 1. Eat a variety of foods For good health, we need more than 40 different nutrients, and no single food can supply them all. 2. Base your diet on plenty of foods rich in carbohydrates About half the calories in our diet should come from foods rich in carbohydrates, such as cereals, rice, pasta, potatoes, and bread. It is a good idea to include at least one of these at every meal. 3. Replace saturated with unsaturated fat Fats are important for good health and proper functioning of the body. We should limit the consumption of total and saturated fats (often coming from foods of animal origin), and completely avoid trans fats; reading the labels helps to identify the sources."'
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="186dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="10dp"
+                android:text="More"
+                android:textSize="18sp"
+                app:backgroundTint="@color/btn_color" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
