@@ -1,10 +1,8 @@
 package com.example.myhakim.ui.auth_fragments.signUp_fragment
 
 import android.app.Activity
-import android.content.Context
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -15,9 +13,9 @@ import androidx.navigation.fragment.findNavController
 import com.example.myhakim.R
 import com.example.myhakim.ui.Dialogs.LoadingDialog
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.login_fragment.*
-import kotlinx.android.synthetic.main.login_fragment.loginButton
-import kotlinx.android.synthetic.main.sign_up_fragment.*
+import kotlinx.android.synthetic.main.fragment_login.*
+import kotlinx.android.synthetic.main.fragment_sign_up.*
+
 
 class signUpFragment : Fragment() {
 
@@ -35,7 +33,7 @@ class signUpFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.sign_up_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_sign_up, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

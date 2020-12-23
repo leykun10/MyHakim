@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E6DADA"
-    tools:context=".ui.ContactActivity">
+    tools:context=".ui.contact_us_activity.ContactUsActivity">
 
     <TextView
         android:id="@+id/textView23"

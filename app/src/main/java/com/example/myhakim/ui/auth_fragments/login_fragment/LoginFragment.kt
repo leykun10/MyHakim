@@ -1,8 +1,6 @@
 package com.example.myhakim.ui.auth_fragments.login_fragment
 
 import android.app.Activity
-import android.app.AlertDialog
-import android.app.Application
 import android.content.Context
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -17,9 +15,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.myhakim.R
 import com.example.myhakim.ui.Dialogs.LoadingDialog
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.login_fragment.*
-import kotlinx.android.synthetic.main.login_fragment.loginButton
-import kotlinx.android.synthetic.main.sign_up_fragment.*
+import kotlinx.android.synthetic.main.fragment_login.*
+
 
 class LoginFragment : Fragment() {
 
@@ -38,7 +35,7 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.login_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_login, container, false)
     }
 
     override fun onAttach(context: Context) {

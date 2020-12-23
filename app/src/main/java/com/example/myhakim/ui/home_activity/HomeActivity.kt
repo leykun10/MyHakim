@@ -1,22 +1,18 @@
 package com.example.myhakim.ui.home_activity
 
-import android.app.Notification
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.navigation.NavController
-import androidx.navigation.findNavController
-import androidx.navigation.ui.onNavDestinationSelected
 import com.example.myhakim.MainActivity
 import com.example.myhakim.R
-import com.example.myhakim.ui.ContactActivity
-import com.example.myhakim.ui.NotificationActivity
-import com.example.myhakim.ui.SettingsActivity
+import com.example.myhakim.ui.contact_us_activity.ContactUsActivity
+import com.example.myhakim.ui.notification_activity.NotificationActivity
+import com.example.myhakim.ui.setting_activity.SettingsActivity
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.home_activity.*
-import kotlinx.android.synthetic.main.nav_header.*
+import kotlinx.android.synthetic.main.activity_home.*
+
 
 class HomeActivity : AppCompatActivity() {
     lateinit var toggle:ActionBarDrawerToggle
@@ -24,7 +20,7 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.home_activity)
+        setContentView(R.layout.activity_home)
 
         toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close)
         drawerLayout.addDrawerListener(toggle)
@@ -36,7 +32,7 @@ nav_view.setNavigationItemSelectedListener {
 
     when(it.itemId){
         R.id.setting_item-> {
-            var intent = Intent(this,SettingsActivity::class.java)
+            var intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
         R.id.home_item-> {
@@ -44,7 +40,7 @@ nav_view.setNavigationItemSelectedListener {
             startActivity(intent)
         }
         R.id.notification->{
-            var intent = Intent(this,NotificationActivity::class.java)
+            var intent = Intent(this, NotificationActivity::class.java)
             startActivity(intent)
         }
 
@@ -56,7 +52,7 @@ nav_view.setNavigationItemSelectedListener {
 
     R.id.contact->
     {
-        var intent = Intent(this, ContactActivity::class.java)
+        var intent = Intent(this, ContactUsActivity::class.java)
         startActivity(intent)}
 }
     true
